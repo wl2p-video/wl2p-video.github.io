@@ -82,6 +82,38 @@ h2 {
   margin-bottom: 0.5rem;
 }
 .author-name { font-size: 1.05rem; font-weight: 500; }
+.venue {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  background: var(--fg);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.link-button:hover { background: #3f3f46; }
+.link-button.is-disabled {
+  background: var(--badge-bg);
+  color: var(--muted-2);
+  border: 1px solid var(--border);
+  cursor: default;
+}
+.link-button small { font-size: 0.8em; }
 .content { max-width: var(--wide-max); margin: 0 auto; }
 #teaser { margin-bottom: 3rem; }
 .teaser-grid {
